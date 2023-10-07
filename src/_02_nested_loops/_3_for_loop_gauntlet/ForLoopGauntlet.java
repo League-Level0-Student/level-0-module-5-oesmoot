@@ -37,11 +37,28 @@ public class ForLoopGauntlet {
 				System.out.println(m + " " + r);
 			}
 		}
-		for(int s = 0;s<3;s++) {
-			for(int u = 1; u<3; u++) {
-				System.out.print(u + s*3);
+		for(int p = 0; p<3; p++) {
+			System.out.println();
+			for (int a = 1; a<4; a++) {
+				System.out.print(a + p*3);
 			}
-			//System.out.println((1 + (s*3)) + " " + (2 + (s*3)) + " " + (3 + (s*3)));
+		}
+		for(int v = 0; v<10; v++) {
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			for(int b = 1; b<11; b++) {
+				System.out.print(b + v * 10 + "  ");
+			}
+		}
+		String u = "*";
+		for ( int y = 0; y<6; y++) {
+			System.out.println();
+			for (int x = 0; x<6; x++) {
+				System.out.print(u);
+			}
 		}
 	}
+
 }
+
