@@ -1,3 +1,4 @@
+
 package _02_nested_loops._3_for_loop_gauntlet;
 
 public class ForLoopGauntlet {
@@ -54,7 +55,7 @@ public class ForLoopGauntlet {
 		String u = "*";
 		for ( int y = 0; y<6; y++) {
 			System.out.println();
-			for (int x = 0; x<6; x++) {
+			for (int x = -1; x<y; x++) {
 				System.out.print(u);
 			}
 		}
