@@ -9,6 +9,24 @@ public class obedientRobot {
 		Robot rob = new Robot();
 		String shape = JOptionPane.showInputDialog("choose a shape (square, circle, triangle)");
 		String color = JOptionPane.showInputDialog("choose a color ");
+		if (color.equals("orange")) {
+			orange(rob);	
+		}
+		if (color.equals("red")) {
+			red(rob);
+		}
+		if (color.equals("yellow")) {
+			yellow(rob);
+		}
+		if (color.equals("green")) {
+			green(rob);
+		}
+		if (color.equals("blue")) {
+			blue(rob);
+		}
+		if (color.equals("purple")) {
+			purple(rob);
+		}
 		if (shape.equals("square")) {
 			square(rob);
 		}
@@ -47,4 +65,23 @@ public class obedientRobot {
 			rob.turn(1);
 		}
 	}
+	static void orange(Robot rob) {
+		rob.setPenColor(252, 157, 3);
+	}
+	static void red(Robot rob) {
+		rob.setPenColor(255,0,0);
+	}
+	static void yellow(Robot rob) {
+		rob.setPenColor(255, 251, 0);
+	}
+	static void green(Robot rob ) {
+		rob.setPenColor(17, 255, 0);
+	}
+	static void blue(Robot rob) {
+		rob.setPenColor(0, 30, 255);
+	}
+	static void purple(Robot rob) {
+		rob.setPenColor(179, 0, 255);
+	}
+
 }
